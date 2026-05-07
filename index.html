@@ -173,9 +173,33 @@
             margin-bottom: 15px;
         }
         
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
         @media (max-width: 768px) {
+            body {
+                padding: 15px 10px;
+            }
+            .header {
+                padding: 30px 15px;
+            }
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            .content {
+                padding: 20px 15px;
+            }
             .grid-2 {
                 grid-template-columns: 1fr;
+            }
+            th, td {
+                padding: 12px 10px;
+                font-size: 0.9rem;
+            }
+            .timeline-item {
+                padding: 15px;
             }
         }
     </style>
@@ -228,6 +252,7 @@
         </div>
         <div class="section">
             <h2 class="section-title">Inversión y Condiciones de Pago</h2>
+            <div class="table-responsive">
             <table>
                 <thead>
                     <tr>
@@ -249,9 +274,11 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
         </div>
         <div class="section">
             <h2 class="section-title">Detalle de Servicios y Costos</h2>
+            <div class="table-responsive">
             <table>
                 <thead>
                     <tr>
@@ -359,6 +386,7 @@
                     </tr>
                 </tfoot>
             </table>
+            </div>
         </div>
     </div>
     
